@@ -1,0 +1,44 @@
+$gray: #a0a0a0;
+$black: #000;
+
+.form {
+  &__field {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__input {
+    width: 320px;
+    max-height: 60px;
+    padding: 23px 0px 22px;
+    border: 1px solid $gray;
+    border-radius: 12px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    padding-left: 46px;
+    color: $gray;
+  }
+  &__input:focus {
+    color: $black;
+  }
+}
+
+.form__input.validate {
+  color: red;
+}
+.form__input.validate::-webkit-input-placeholder {
+  color: red;
+}
+.form__input.validate::-moz-placeholder {
+  color: red;
+}
+.form__input.validate:-moz-placeholder {
+  color: red;
+}
+.form__input.validate:-ms-input-placeholder {
+  color: red;
+}
+.politicy {
+  cursor: pointer;
+}

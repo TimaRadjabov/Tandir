@@ -1,0 +1,39 @@
+$white: #fff;
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 20px 0px 21px;
+  background: linear-gradient(180deg, #3f96fa 0%, #1d6dca 100%);
+  border-radius: 12px;
+  font-family: "Helvetica";
+  font-size: 18px;
+  line-height: 116%;
+  color: $white;
+  position: relative;
+  z-index: 100;
+}
+.btn:active {
+  background: linear-gradient(180deg, #217be3 0%, #083f7e 100%);
+}
+.btn::before {
+  content: "";
+  display: block;
+  border-radius: 12px;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, #97c7ff 0%, #6898cf 100%);
+  transition: opacity 0.2s ease-in-out;
+  z-index: -1000;
+}
+.btn:hover::before {
+  opacity: 1;
+}
+.btn:active::before {
+  opacity: 0;
+}
