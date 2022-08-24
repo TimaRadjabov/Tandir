@@ -13,9 +13,16 @@
 	font-style: normal;
 }
 @font-face{
-	font-family: Helvetica Regular;
+	font-family: Helvetica Bold;
 	font-display: swap;
-	src: url("../fonts/Helvetica Regular.woff2") format("woff2"), url("../fonts/Helvetica Regular.woff") format("woff");
+	src: url("../fonts/Helvetica-bold.woff2") format("woff2"), url("../fonts/Helvetica-bold.woff") format("woff");
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face{
+	font-family: Helvetica;
+	font-display: swap;
+	src: url("../fonts/Helvetica-regular.woff2") format("woff2"), url("../fonts/Helvetica-regular.woff") format("woff");
 	font-weight: 400;
 	font-style: normal;
 }
@@ -24,12 +31,5 @@
 	font-display: swap;
 	src: url("../fonts/Intro-Black-Caps.woff2") format("woff2"), url("../fonts/Intro-Black-Caps.woff") format("woff");
 	font-weight: 900;
-	font-style: normal;
-}
-@font-face{
-	font-family: Helvetica;
-	font-display: swap;
-	src: url("../fonts/Helvetica-bold.woff2") format("woff2"), url("../fonts/Helvetica-bold.woff") format("woff");
-	font-weight: 700;
 	font-style: normal;
 }
