@@ -336,3 +336,14 @@ if ($('#thanks-body').length > 0) {
     newDate();
 } */
 
+// Slider
+
+$('.feedback__slider').slick({
+	infinite: true,
+	slidesToShow: 1,
+	slidesToScroll: 1,
+	prevArrow:
+	'<img class="arrow  arrow__left" src="../img/feedback/left-arrow.svg" alt="arrow"/>',
+ nextArrow:
+	'<img class="arrow  arrow__right" src="../img/feedback/right-arrow.svg" alt="arrow"/>',
+ });
