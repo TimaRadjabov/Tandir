@@ -2284,3 +2284,144 @@ body {
     display: inline-table;
   }
 }
+/*  =======================================  investment  =============================== */
+.investment {
+  background: url("../img/investment/kebab.png") 0 10% no-repeat, url("../img/investment/tomato.png") 100% 80% no-repeat, url("../img/investment/parsley.png") 100% 90% no-repeat, url("../img/investment/back.png") 50%/cover no-repeat;
+}
+
+@media (max-width: 2000px) {
+  .investment {
+    background: url("../img/investment/kebab.png") -10% 10% no-repeat, url("../img/investment/tomato.png") 100% 80% no-repeat, url("../img/investment/parsley.png") 100% 90% no-repeat, url("../img/investment/back.png") 50%/cover no-repeat;
+  }
+}
+@media (max-width: 1756px) {
+  .investment {
+    background: url("../img/investment/kebab.png") -30% 10% no-repeat, url("../img/investment/tomato.png") 130% 80% no-repeat, url("../img/investment/parsley.png") 130% 90% no-repeat, url("../img/investment/back.png") 50%/cover no-repeat;
+  }
+}
+@media (max-width: 1439px) {
+  .investment {
+    background: url("../img/investment/back.png") 50%/cover no-repeat;
+  }
+}
+.investment__body {
+  padding: 90px 0 76px 0;
+}
+
+.investment__title {
+  max-width: 1020px;
+  margin: 0 auto 46px auto;
+}
+
+.investment__descr {
+  max-width: 963px;
+  margin: 0 auto 20px auto;
+  font-family: "Helvetica";
+  font-size: 24px;
+  line-height: 116%;
+  text-align: center;
+  color: #000000;
+}
+
+.investment__content {
+  filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.1));
+  margin-bottom: 25px;
+}
+
+.investment__content-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 21px 39px;
+  font-family: "Helvetica";
+  font-size: 24px;
+  line-height: 116%;
+}
+
+.investment__content-item.item--title {
+  background: #ffffff;
+  border-radius: 20px 20px 0px 0px;
+  justify-content: center;
+}
+
+.investment__content-item.special {
+  border-radius: 0px 0px 20px 20px;
+  background: #f70000;
+  color: #ffffff;
+  font-family: Helvetica Bold;
+}
+
+.investment__content-item.odd {
+  background: #f3f3f3;
+}
+
+.investment__content-item.even {
+  background: #ffffff;
+}
+
+.investment__content-title {
+  font-family: Helvetica Bold;
+  font-size: 24px;
+  line-height: 116%;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.investment__subtitle {
+  max-width: 828px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Helvetica";
+  font-size: 18px;
+  line-height: 116%;
+  color: #888888;
+}
+
+@media (max-width: 1023px) {
+  .investment__descr {
+    font-size: 20px;
+  }
+  .investment__content-title {
+    font-size: 20px;
+  }
+  .investment__content-item {
+    padding: 18px 25px;
+    font-size: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .investment__body {
+    padding: 40px 0;
+  }
+  .investment__descr {
+    font-size: 18px;
+  }
+  .investment__content-title {
+    font-size: 16px;
+  }
+  .investment__content-item {
+    padding: 15px 20px;
+    font-size: 16px;
+  }
+  .investment__subtitle {
+    font-size: 14px;
+  }
+}
+@media (max-width: 600px) {
+  .investment__descr {
+    font-size: 16px;
+  }
+  .investment__content-title {
+    font-size: 14px;
+    text-align: center;
+  }
+  .investment__content-item {
+    padding: 10px 12px;
+    font-size: 14px;
+    min-height: 52px;
+    align-items: center;
+    justify-content: center;
+  }
+  .investment__content-text {
+    max-width: 144px;
+  }
+}
