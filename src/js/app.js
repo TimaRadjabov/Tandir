@@ -347,3 +347,24 @@ $('.feedback__slider').slick({
  nextArrow:
 	'<img class="arrow  arrow__right" src="../img/feedback/right-arrow.svg" alt="arrow"/>',
  });
+
+
+ // Tabs
+
+
+ const tabItem = document.querySelectorAll(".stage__tab-btn");
+   const tabContent = document.querySelectorAll(".stage__content");
+	const tabText = document.querySelectorAll(".stage__tab-descr");
+
+
+   function tabChanger(item, content, text) {
+      item.forEach((tab, index) => {
+         tab.addEventListener('click', function(){
+				item[index].classList.toggle('active');           
+            content[index].classList.toggle('active');
+            text[index].classList.toggle('active');
+            
+         })
+      })
+   }
+   tabChanger(tabItem, tabContent, tabText);
